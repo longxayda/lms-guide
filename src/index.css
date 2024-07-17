@@ -1,0 +1,16 @@
+/* styles.css (hoặc file CSS tương tự) */
+.app-container {
+  display: flex; /* Sử dụng flexbox để sắp xếp các phần tử */
+  height: 100vh; /* Đảm bảo container có chiều cao 100% của viewport */
+}
+
+.sidebar {
+  width: 250px; /* Độ rộng của sidebar */
+  background-color: #f0f0f0; /* Màu nền của sidebar */
+  padding: 20px; /* Padding cho sidebar */
+}
+
+.main-content {
+  flex: 1; /* Phần content chia đều phần còn lại của không gian */
+  padding: 20px; /* Padding cho phần content */
+}
