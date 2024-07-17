@@ -1,0 +1,37 @@
+/* Sidebar.css */
+.sidebar {
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.sidebar h5 {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.sidebar-menu, .submenu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li, .submenu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu li a, .submenu li a, .sidebar-menu li > div, .submenu li > div {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.sidebar-menu li.active a, .submenu li.active a, .sidebar-menu li.active > div, .submenu li.active > div {
+    color: #007bff;
+}
+
+.submenu {
+    padding-left: 20px;
+}
