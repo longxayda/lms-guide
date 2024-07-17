@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <h2>Menu</h2>
       <ul>
         <li>
           <Link to="/">Lời Giới Thiệu</Link>
@@ -139,6 +138,7 @@ const Sidebar = () => {
         <li>
           <Link to="/lien-he">Liên hệ</Link>
         </li>
+
       </ul>
     </div>
   );
