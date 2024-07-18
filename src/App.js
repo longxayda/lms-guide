@@ -1,8 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Sidebar from "./components/SideBar";
-
-import AboutPage from "./components/AboutPage"; // Import other pages/components as needed
+import Sidebar from "./components/SideBar";import AboutPage from "./components/AboutPage"; 
 import Khoitaohethong from "./components/Admin-Dashboard/KhoiTaoHeThong";
 import Caidats from "./components/Admin-Dashboard/Caidats";
 import KhoiTaoHeThong from "./components/Admin-Dashboard/KhoiTaoHeThong";
@@ -24,7 +22,7 @@ const App = () => {
   return (
     <Router>
       <div className="container">
-      <div className="Header"> <Header />
+      <div className="header"> <Header />
        </div>
        <div className="app-container">
        <Sidebar />
