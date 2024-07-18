@@ -1,6 +1,21 @@
+* {
+  font-family: 'Assistant' sans-serif;
+}
+p{
+  color: #5e5b5b;
+}
+ul li {
+  color: #5e5b5b;
+}
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
 .app-container {
   display: flex; 
-  height: 100vh; 
+
 }
 
 .sidebar {
