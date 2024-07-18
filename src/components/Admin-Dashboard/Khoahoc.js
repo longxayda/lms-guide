@@ -1,6 +1,5 @@
 import React from "react";
 import khoahoc1 from "./QUẢN TRỊ VIÊN/2_CÀI ĐẶT/4_KHÓA_HỌC/KHÓA HỌC_1.png";
-import khoahoc2 from "./QUẢN TRỊ VIÊN/2_CÀI ĐẶT/4_KHÓA_HỌC/KHÓA HỌC - 2.png";
 import chungchi from "./QUẢN TRỊ VIÊN/2_CÀI ĐẶT/4_KHÓA_HỌC/chungchi.png";
 const Khoahoc = () => {
   return (
