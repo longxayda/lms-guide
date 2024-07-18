@@ -19,6 +19,8 @@ import DangNhapVoiVaiTroKhac from "./components/Instructor-Dashboard/DangNhapVoi
 import TinNhan from "./components/Instructor-Dashboard/TinNhan";
 import Hoso from "./components/Instructor-Dashboard/Hoso";
 import HoiVaDap from "./components/Instructor-Dashboard/HoiVaDap";
+import Menu from "./components/Admin-Dashboard/Menu";
+import Khoahoc from "./components/Admin-Dashboard/Khoahoc";
 
 const App = () => {
   return (
@@ -32,7 +34,9 @@ const App = () => {
             <Route path="/khoi-tao-he-thong" element={<Khoitaohethong />} />
             <Route path="/cai-dat" element={<Caidats />} />
             <Route path="/khoi-tao-he-thong" element={<KhoiTaoHeThong />} />
+            <Route path="/menu" element={<Menu />} />
 
+            <Route path="/khoa-hoc" element={<Khoahoc />} />
             <Route path="/tai-khoang-cai-dat" element={<TaiKhoangCaiDat />} />
             <Route path="/trang-chu" element={<Trangchu />} />
             <Route path="/man-hinh-quan-ly" element={<TrangTongQuan />} />
