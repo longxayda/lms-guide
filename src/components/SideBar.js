@@ -66,9 +66,9 @@ const Sidebar = () => {
           )}
         </li>
         <li className={isSubmenuActive(['/khoa-hoc']) ? 'active' : ''}>
-          <div onClick={() => toggleSubmenu(3)}>
+          <Link to={'/khoa-hoc'} onClick={() => toggleSubmenu(3)}>
             <span>Khóa học</span>
-          </div>
+          </Link>
           {openSubmenu[3] && (
             <ul className="submenu">
               <li className={isActive('/tao-chinh-sua-xoa-khoa-hoc') ? 'active' : ''}><Link to="/tao-chinh-sua-xoa-khoa-hoc">Tạo/Chỉnh sửa/Xóa khóa học</Link></li>
@@ -99,7 +99,45 @@ const Sidebar = () => {
         <li className={isActive('/dang-nhap-vao-vai-tro-khac') ? 'active' : ''}><Link to="/dang-nhap-vao-vai-tro-khac">Đăng nhập vai trò khác</Link></li>
         <li className={isActive('/tin-nhan') ? 'active' : ''}><Link to="/tin-nhan">Tin nhắn</Link></li>
         <li className={isActive('/ho-so') ? 'active' : ''}><Link to="/ho-so">Hồ sơ</Link></li>
-        <li className={isActive('/lien-he') ? 'active' : ''}><Link to="/lien-he">Liên hệ</Link></li>
+        <h5>GIÁO VIÊN</h5>
+        <li className={isActive('/man-hinh-quan-ly') ? 'active' : ''}><Link to="/man-hinh-quan-ly">Trang Tổng Quan</Link></li>
+        <li className={isSubmenuActive(['/course-management']) ? 'active' : ''}>
+          <Link to={'/course-management'} onClick={() => toggleSubmenu(4)}>
+            <span>Nội dung khóa học</span>
+          </Link>
+          {openSubmenu[4] && (
+            <ul className="submenu">
+              <li>
+                <Link to={'/bai-hoc-kiem-tra'} onClick={(e) => { e.stopPropagation(); toggleSubmenu(5); }} className={isSubmenuActive(['/bai-hoc-kiem-tra']) ? 'active' : ''}>
+                  <span>Bài học / Bài kiểm tra</span>
+                </Link>
+                {openSubmenu[5] && (
+                  <ul className="submenu">
+                    <li className={isActive('/phan') ? 'active' : ''}><Link to="/phan">Phần </Link></li>
+                    <li className={isActive('/hoc-truc-tiep') ? 'active' : ''}><Link to="/hoc-truc-tiep">Buổi học trực tiếp</Link></li>
+                    <li className={isActive('/video') ? 'active' : ''}><Link to="/video">Video</Link></li>
+                    <li className={isActive('/am-thanh') ? 'active' : ''}><Link to="/am-thanh">Âm thanh</Link></li>
+                    <li className={isActive('/ban-trinh-bay') ? 'active' : ''}><Link to="/ban-trinh-bay">Bản trình bày</Link></li>
+                    <li className={isActive('/scorm') ? 'active' : ''}><Link to="/scorm">SCORM</Link></li>
+                    <li className={isActive('/noi-dung') ? 'active' : ''}><Link to="/noi-dung">Nội dung</Link></li>
+                    <li className={isActive('/iframe') ? 'active' : ''}><Link to="/iframe">IFrame</Link></li>
+                    <li className={isActive('/bai-kiem-tra') ? 'active' : ''}><Link to="/bai-kiem-tra">Bài kiểm tra</Link></li>
+                    <li className={isActive('/bai-tu-luan') ? 'active' : ''}><Link to="/bai-tu-luan">Bài tự luận</Link></li>
+                    <li className={isActive('/khao-sat') ? 'active' : ''}><Link to="/khao-sat">Khảo sát</Link></li>
+                    <li className={isActive('/sao-chep-bai-hoc') ? 'active' : ''}><Link to="/sao-chep-bai-hoc">Sao chép bài học</Link></li>
+
+                  </ul>
+                )}
+              </li>
+              <li className={isActive('/danh-sach-nguoi-dung') ? 'active' : ''}><Link to="/danh-sach-nguoi-dung">Danh sách người dùng</Link></li>
+            </ul>
+          )}
+        </li>
+        <li className={isActive('/lich-ca-nhan') ? 'active' : ''}><Link to="/lich-ca-nhan">Lịch cá nhân</Link></li>
+        <li className={isActive('/dang-nhap-voi-vai-tro-khac') ? 'active' : ''}><Link to="/dang-nhap-voi-vai-tro-khac">Đăng nhập với vai trò khác</Link></li>
+        <li className={isActive('/tin-nhan') ? 'active' : ''}><Link to="/tin-nhan">Tin nhắn</Link></li>
+        <li className={isActive('/ho-so') ? 'active' : ''}><Link to="/ho-so">Hồ sơ</Link></li>
+        <li className={isActive('/hoi-dap') ? 'active' : ''}><Link to="/hoi-dap">Hỏi & đáp</Link></li>
       </ul>
     </div>
   );
