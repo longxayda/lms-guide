@@ -14,7 +14,7 @@ const KhoiTaoHeThong = () => {
       <div style={{display:'flex',alignContent:'center',alignItems:'center'}}>
         <h3>Bước 1:</h3>
         <p>
-           Truy cập vào trang <a href="https://edutek.io"> https://edutek.io</a>
+           Truy cập vào trang <a href="https://power5.edu.vn"> https://power5.edu.vn</a>
           , chọn nút Đăng nhập
         </p>
       </div>

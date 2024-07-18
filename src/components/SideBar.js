@@ -95,10 +95,10 @@ const Sidebar = () => {
             </ul>
           )}
         </li>
-        <li className={isSubmenuActive(["/khoa-hoc"]) ? "active" : ""}>
-          <div onClick={() => toggleSubmenu(3)}>
+        <li className={isSubmenuActive(['/khoa-hoc']) ? 'active' : ''}>
+          <Link to={'/khoa-hoc'} onClick={() => toggleSubmenu(3)}>
             <span>Khóa học</span>
-          </div>
+          </Link>
           {openSubmenu[3] && (
             <ul className="submenu">
               <li
