@@ -6,6 +6,8 @@ import AboutPage from "./components/AboutPage"; // Import other pages/components
 import Khoitaohethong from "./components/Admin-Dashboard/KhoiTaoHeThong";
 import Caidats from "./components/Admin-Dashboard/Caidats";
 import KhoiTaoHeThong from "./components/Admin-Dashboard/KhoiTaoHeThong";
+import TaiKhoangCaiDat from "./components/Admin-Dashboard/TaiKhoangCaiDat";
+import Trangchu from "./components/Admin-Dashboard/Trangchu";
 
 const App = () => {
   return (
@@ -15,11 +17,12 @@ const App = () => {
         <div className="main-content">
           <Routes>
             <Route path="/" element={<AboutPage />} />
-
             <Route path="/gioi-thieu" element={<AboutPage />} />
             <Route path="/khoi-tao-he-thong" element={<Khoitaohethong />} />
             <Route path="/cai-dat" element={<Caidats />} />
             <Route path="/khoi-tao-he-thong" element={<KhoiTaoHeThong />} />
+            <Route path="/tai-khoang-cai-dat" element={<TaiKhoangCaiDat />} />
+            <Route path="/trang-chu" element={<Trangchu />} />
           </Routes>
         </div>
       </div>
